@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente.
+        const numero = parseInt(prompt("Digite um número inteiro: "));
+        const numeroStr = numero.toString();
+
+let somaDigitos = 0;
+
+
+for (let i = 0; i < numeroStr.length; i++) {
+  const digito = numeroStr.charAt(i);
+  somaDigitos += parseInt(digito);
+  document.write(digito);
+}
+
+// Exibe a soma dos dígitos
+document.write("<br>Soma dos dígitos: " + somaDigitos);
+    </script>
+</body>
+</html>

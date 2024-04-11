@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "do-while".
+
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+
+        document.write("Os dígitos do número " + numero + " são:");
+
+if (numero < 0) {
+  numero = Math.abs(numero);
+}
+
+do {
+  let digito = numero % 10;
+  document.write(digito);
+  numero = Math.floor(numero / 10);
+} while (numero > 0);
+
+    </script>
+</body>
+</html>

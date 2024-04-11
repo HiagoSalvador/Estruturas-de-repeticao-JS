@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Crie um programa que leia o nome e a idade de várias pessoas usando o loop "while" até que o nome "fim" seja informado. Ao final, exiba a média das idades.
+        let nome = "";
+        let somaIdades = 0;
+        let numeroPessoas = 0;
+
+while (nome !== "fim") {
+  // Ler o nome
+  nome = prompt("Digite o nome (ou 'fim' para sair): ");
+
+  if (nome !== "fim") {
+    const idade = parseInt(prompt("Digite a idade: "));
+    somaIdades += idade;
+    numeroPessoas++;
+  }
+}
+
+const mediaIdades = somaIdades / numeroPessoas;
+
+document.write(`A média das idades é: ${mediaIdades.toFixed(2)}`);
+    </script>
+</body>
+</html>

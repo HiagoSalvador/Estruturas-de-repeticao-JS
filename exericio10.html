@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci usando o loop "while".
+        let a = 0, b = 1;
+        let contador = 0;
+
+document.write("Os primeiros 20 números da sequência de Fibonacci:");
+
+while (contador < 20) {
+  document.write(a + "<br>");
+  let proximo = a + b;
+  a = b;
+  b = proximo;
+  contador++;
+}
+    </script>
+</body>
+</html>
